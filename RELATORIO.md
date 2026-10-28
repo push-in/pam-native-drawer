@@ -15,4 +15,5 @@ com -Xmx3g e quatro workers; daemon encerrado e lock liberado. Compilador usou
 fallback sem daemon Kotlin por restrição de escrita, com BUILD SUCCESSFUL.
 Logs: /tmp/codex-x5-validation/. Artefatos próprios removidos após a etapa.
 
-Publicação prevista nesta rodada: tag e GitHub release 0.1.0 e Packagist.
+Publicação concluída: tag e GitHub release 0.1.0; Packagist retornou success.
+Repositório público confirmado via gh. Nenhuma tag do núcleo criada.
