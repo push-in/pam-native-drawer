@@ -1,0 +1,23 @@
+{
+    "name": "pushinbr/pam-native-drawer",
+    "description": "Optional native drawer for PAM Native.",
+    "type": "pam-native-plugin",
+    "license": "Apache-2.0",
+    "require": {
+        "php": "^8.5",
+        "pushinbr/pam-native": "^1.46"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pam\\Native\\Drawer\\": "src/"
+        }
+    },
+    "extra": {
+        "pam-native": {
+            "plugin": "pam-native.plugin.json"
+        }
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    }
+}

@@ -1,0 +1,5 @@
+/vendor/
+/composer.lock
+/.pam-native/
+/android/build/
+/ios/.build/
