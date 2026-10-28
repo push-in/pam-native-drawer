@@ -19,7 +19,7 @@
 
 - núcleo: `bea987a7` — commit WIP local, mensagem com `[skip ci]`.
 - real-world app: `bfb0e897` — commit WIP local, mensagem com `[skip ci]`.
-- Drawer: `d192b15` — commit WIP local, mensagem com `[skip ci]`.
+- Drawer: `d192b15` — extração; `bebf3e2` — construtor Context exigido pelo codegen. Ambos com `[skip ci]`.
 - Toast: `d3ebc35` — commit WIP local, mensagem com `[skip ci]`.
 
 Os commits de documentação posteriores registram este relatório. Nenhum merge, tag,
@@ -62,9 +62,9 @@ temporários foram removidos ao encerrar a validação PHP. PHPStan não foi exe
 
 ## Recursos e pendências
 
-O disco começou abaixo do piso (16 GB), chegou a 30 GB e voltou a cair para 19 GB.
+O disco começou abaixo do piso (16 GB), chegou a 30 GB e voltou a cair para 19 GB; a conferência após cinco minutos mostrou 13 GB (17:03).
 Nenhum build/emulador foi iniciado por esta tarefa. Os locks existentes pertencem a
-`back-predictive` (Gradle, arquivo marcado 16:45) e `parity-feed` (emulador, 15:19).
+`parity-bubbles` (Gradle, arquivo marcado 17:02; antes `back-predictive`) e `parity-feed` (emulador, 15:19).
 Não foram removidos nem reutilizados por esta tarefa. A tentativa de obter
 o lock usa `mkdir`, tem prazo de cinco minutos e só inicia Gradle após confirmar
 pelo menos 20 GiB livres; se conseguir, usa `-Xmx3g`, quatro workers e `--stop` no final.
@@ -85,3 +85,5 @@ Faltam:
 Não houve conflitos de merge: as mudanças permanecem em branches próprias, a partir
 de `origin/integrate/port3-20261027`. O fetch inicial reportou um erro de GC já existente
 em outro worktree do clone compartilhado; a criação deste worktree foi concluída.
+
+A tentativa de adquirir o lock Gradle expirou após cinco minutos sem iniciar build.
