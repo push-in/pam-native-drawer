@@ -65,7 +65,7 @@ temporários foram removidos ao encerrar a validação PHP. PHPStan não foi exe
 O disco começou abaixo do piso (16 GB), chegou a 30 GB e voltou a cair para 19 GB.
 Nenhum build/emulador foi iniciado por esta tarefa. Os locks existentes pertencem a
 `back-predictive` (Gradle, arquivo marcado 16:45) e `parity-feed` (emulador, 15:19).
-Não foram removidos nem tomados destaques de outros trabalhos. A tentativa de obter
+Não foram removidos nem reutilizados por esta tarefa. A tentativa de obter
 o lock usa `mkdir`, tem prazo de cinco minutos e só inicia Gradle após confirmar
 pelo menos 20 GiB livres; se conseguir, usa `-Xmx3g`, quatro workers e `--stop` no final.
 
